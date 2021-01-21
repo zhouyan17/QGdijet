@@ -1,0 +1,6 @@
+#Draw BumpHunter Out
+python scriptResonance/BumpHunter/plotBumpHunter.py --inFileName input/BumpHunter_Resonance.root --outPath plotting/BumpHunter/plots_Resonance/ --lumi 140
+# Signal overlaid on Background
+python scriptResonance/BumpHunter/plotBumpHunter.py --inFileName input/BumpHunter_Resonance.root --outPath plotting/BumpHunter/Test/ --lumi 140 --overlaidSignal --signalFileName input/dijetMC_qstar_fullBins.root
+# WithMCRatio
+python scriptResonance/BumpHunter/plotBumpHunter.py --inFileName input/BumpHunter_Resonance.root --outPath plotting/BumpHunter/Test/ --lumi 140 --overlaidSignal --signalFileName input/dijetMC_qstar_fullBins.root --mcFileName input/pseudoMC.root --drawMCComparison
